@@ -1,0 +1,77 @@
+download sublime text2(http://www.sublimetext.com/2):
+wget http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.tar.bz2
+
+install geany:sudo apt-get install geany
+
+vim .bashrc//add alias 
+
+install svn client:sudo apt-get install subversion
+checkout file from svn:svn co svn://www.svn.com/product --username lyp
+
+install tornado:
+wget https://github.com/downloads/facebook/tornado/tornado-2.4.tar.gz
+tar xvzf tornado-2.4.tar.gz
+cd tornado-2.4
+python setup.py build
+sudo python setup.py install
+
+
+install mongodb.tar.gz
+wget mongodb
+tar xvzf mongdb.tar.gz
+mkdir data/bin
+./mongodb --dbpath=data/bin
+./mongo
+
+
+
+install git:
+sudo apt-get install git
+
+username:qeeshin
+pass:123456abc
+首先在http://github.com上面建立repo:leezi.git。
+然后使用git clone https://github.com/qeeshin/leezi.git将该repo pull到本地。
+如果编辑了某个文件，那么就使用git commit -a -m 'modify some file'来将修改提交到本地的repo
+最后使用：git push将代码push到github。
+
+如果新增了test.py文件，那么git add test.py将test.py。
+然后使用git commit -a -m 'add new file'。
+最后执行git push
+
+如果删除了test.py文件，那么执行git commit -a -m 'delete file'
+然后执行git push
+
+另外有git status看状态
+git log 看日志
+git revert version_num还原本地
+git diff查看变动
+
+
+
+install easy_install
+sudo apt-get install python-setuptools
+
+mongodb for python docs:http://api.mongodb.org/python/2.3/
+mongodb shell docs:http://cn.docs.mongodb.org/manual/
+install pymongo:
+sudo easy_install pymongo
+frequently used methods:
+from pymongo import Connection
+con=Connection('localhost',27017)
+db=con.qeeshin
+applications=db.applications
+applications=insert({"name":"leezi","msg":"i want a website"})
+applications.find_one({"name":"leezi"})
+for application in applications.find()
+    application
+
+
+chmod +x myscript.py;//give myscript.py an executable mode.
+python中执行文件"execfile("myscript.py")"
+
+reverse proxy方式是指以代理服务器来接受internet上的链接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求链接的客户端，此时代理服务器对外就表现为一个服务器。
+
+install mysql
+install jabber
+install nginx
