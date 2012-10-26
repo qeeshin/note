@@ -77,3 +77,12 @@ install jabber
 install nginx
 
 developed by leezi
+
+install ftp server on ubuntu:
+sudo apt-get install vsftpd
+default ftp locate:/srv/ftp
+you can edit /etc/passwd to change the default ftp locate to home/ftp
+sudo service vsftpd restart
+config file locate:/etc/vsftpd.conf
+execute ftp localhost to log ftp server
+
