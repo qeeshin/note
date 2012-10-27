@@ -86,3 +86,10 @@ sudo service vsftpd restart
 config file locate:/etc/vsftpd.conf
 execute ftp localhost to log ftp server
 
+install python module dnspython:
+sudo python setup.py install
+or:sudo apt-get install python-dnspython
+
+install python module pyxmpp2:
+git clone https://github.com/Jajcus/pyxmpp2.git
+
