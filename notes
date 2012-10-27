@@ -73,7 +73,7 @@ python中执行文件"execfile("myscript.py")"
 reverse proxy方式是指以代理服务器来接受internet上的链接请求，然后将请求转发给内部网络上的服务器，并将从服务器上得到的结果返回给internet上请求链接的客户端，此时代理服务器对外就表现为一个服务器。
 
 install mysql
-install jabber
+install xmpp server :ejabber
 install nginx
 
 developed by leezi
@@ -93,3 +93,48 @@ or:sudo apt-get install python-dnspython
 install python module pyxmpp2:
 git clone https://github.com/Jajcus/pyxmpp2.git
 
+
+web im:
+strophe.js
+jquery
+linux
+ejabber
+python(pyxmpp2)
+
+linux下设置root密码：
+sudo passwd root(ubuntu)
+su root
+
+install ejabberd
+(http://www.howlanderson.net/tag/ejabberd/):
+(http://brain-c.com/node/16):
+(http://blog.chinaunix.net/uid-8092042-id-2385071.html):
+(http://blog.csdn.net/cyp403/article/details/1015588):
+http://hi.baidu.com/jabber
+http://darkrevival.com/blog/2009/05/22/setup-an-xmpp-server/
+http://zh.wikipedia.org/zh-tw/XMPP
+http://www.sunbo.name/20080409/xmpp
+http://xmpp.org/rfcs/rfc3920.html
+uninstall ejabberd:cd ejabberd;make uninstall 
+ejabberd主目录/etc/ejabberd,另外还有/var/lib/ejabberd
+./configure --enable-odbc
+make
+make install
+debian:sudo apt-get install ejabberd
+
+
+配置文件/etc/ejabberd/ejabberd.cfg
+添加管理员：{acl,admin,{user,"admin","localhost"}}
+
+启动ejabberd(live|start|stop)
+ejabberd live
+重启ejabberd：sudo /etc/init.d/ejabberd restart
+
+register one user;
+ejabberdctl register [user][server][passwrod]
+ejabberdctl register admin localhost 123456
+
+http://ubuntuserver:5280/admin 进行管理
+
+Gajim:是一款使用pyGTK2开发的jabber客户端程序。
+ubuntu安装Gajim:sudo apt-get install gajim
