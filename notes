@@ -134,7 +134,8 @@ register one user;
 ejabberdctl register [user][server][passwrod]
 ejabberdctl register admin localhost 123456
 
-http://ubuntuserver:5280/admin 进行管理
+http://localhost:5280/admin 进行管理
 
-Gajim:是一款使用pyGTK2开发的jabber客户端程序。
-ubuntu安装Gajim:sudo apt-get install gajim
+
+
+
