@@ -8,6 +8,37 @@ vim .bashrc//add alias
 install svn client:sudo apt-get install subversion
 checkout file from svn:svn co svn://www.svn.com/product --username lyp
 
+1:svn checkout svn://192.168.1.1/pro
+2:svn add test.php //waiting for commit
+3:svn commit test.php -m 'logmessage' 
+4:svn update test.php
+5:svn update -r 200 test.php//将test.php还原到版本200
+6:svn status path//查看文件或目录状态
+7:svn delete test.php//waiting for commit
+8:svn log path//查看日志
+9:svn info path//查看文件详细信息
+10:svn diff test.php//svn diff -r 200:201 test.php
+11:svn help ci//svn 帮助
+12:svn list path//版本库下的文件和目录列表
+13:svn mkdir//创建纳入版本控制下的新目录
+14:svn revert//恢复本地修改
+15:svn cat filename//输出指定文件的内容
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 install tornado:
 wget https://github.com/downloads/facebook/tornado/tornado-2.4.tar.gz
 tar xvzf tornado-2.4.tar.gz
@@ -135,7 +166,10 @@ ejabberdctl register [user][server][passwrod]
 ejabberdctl register admin localhost 123456
 
 http://localhost:5280/admin 进行管理
+开启xmpp-httpbind需要在配置文件中添加：
+{request_handlers}以及mod_http_bind
 
-
-
+python的SimpleHTTPServer
+python自带了一个web服务器SimpleHTTPServer，我们可以使用命令：
+python -m SimpleHTTPServer 80来启动web服务器。
 
