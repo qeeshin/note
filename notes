@@ -173,3 +173,10 @@ python的SimpleHTTPServer
 python自带了一个web服务器SimpleHTTPServer，我们可以使用命令：
 python -m SimpleHTTPServer 80来启动web服务器。
 
+ubuntu上开启ssh：
+安装：sudo apt-get install openssh-server
+重启：/etc/init.d/ssh restart
+确认：ps -e|grep ssh
+登陆:ssh -l username 192.168.1.100
+
+
