@@ -180,3 +180,64 @@ ubuntu上开启ssh：
 登陆:ssh -l username 192.168.1.100
 
 
+FHS:filesystem hierarchy standard
+usr:unix software resource
+var:variable
+
+/bin
+放置单用户维护模式下能够被操作的命令：cat,chmod,chown,date,mv,mkdir,cp,bash
+/boot
+存放开机会使用的文件，包括linxu内核文件以及开机菜单与开机所需配置文件。
+/dev
+任何设备和接口设备都是以文件形式存在这个目录中。
+/etc
+系统主要的配置文件，比如帐号密码文件，各种服务的起始文件。/etc/init.d下存放所有默认启动脚本。
+/home
+系统默认的用户主文件夹
+/lib
+放置开机时会用到的函数哭，比如lib/modules中放置内核相关的模块（驱动程序）
+/media
+放置可删除的设备，比如软盘，光盘，dvd等。
+/mnt
+暂时挂载某些额外的设备
+/opt
+给第三方软件放置的目录，不过一般还是放在usr/local
+/root
+系统管理员的主文件夹
+/sbin
+存放开机过程中所需的，里面包括了开机，修复，还原系统所需要的命令。
+/srv
+视为service的缩写，是一些网络服务启动之后，这些服务所需要取用的数据目录，比如www，ftp等。
+/tmp
+存放一般用户或者是正在执行的程序暂时存放文件的地方。
+/proc
+虚拟文件系统(virtual filesystem)，放置的数据都是在内存当中的，比如系统内核，进程，外部设备的状态和网络状态。
+/sys
+虚拟文件目录，记录和内核相关的信息，比如目前已经加载的内核模块与内核检测到的硬件设备信息等。
+
+/usr
+unix software resource的缩写，unix操作系统软件资源目录。包括所有系统默认软件。
+/usr/bin
+绝大部分的用户可使用的命令放置在这里。
+/usr/include
+c/c++等程序语言的头文件与包含文件放置处。
+/usr/lib
+包含各应用软件的函数库，目标文件以及不被一般用户惯用的执行文件或脚本。
+/usr/local
+系统管理员在本机自行安装自己下载的软件，建议安装到该目录。
+/usr/share
+放置共享文件的地方，这个目录中存放的数据几乎是部分硬件架构均可读取的数据。有/usr/share/doc,/usr/share/man,/usr/share/zoneinfo
+usr/src
+一般源码建议放置此处。
+
+/var
+主要针对常态性变动的文件，比如cache，log file和某些软件运行所产生的文件，比如mysql数据库文件。
+
+目录的x代表的是用户能否进入该目录成为工作目录的用途。
+
+d:目录
+-:文件
+l:linkfile
+b:设备文件里面的可供存储的接口设备
+c:设备文件里面的串行端口设备，例如键盘，鼠标。
+
