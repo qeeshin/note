@@ -241,3 +241,22 @@ l:linkfile
 b:设备文件里面的可供存储的接口设备
 c:设备文件里面的串行端口设备，例如键盘，鼠标。
 
+pwd:print working directory
+cd:change directory
+mkdir
+rmdir
+echo $PATH
+cp:copy
+rm:remove
+mv:move
+cat:由第一行开始显示文件内容。
+od test.py//二进制方式查看文件。
+touch：修改文件时间或创建新文件。
+which(查找执行文件)
+whereis(寻找特定文件)
+locate(给定文件的部分名称)
+绝对路径“一定由根目录/写起”，相对路径“不是由/写起”
+.代表此目录
+..代表上一层目录
+-代表前一个工作目录
+~代表“目录用户身份”所在的主文件夹
