@@ -260,3 +260,25 @@ locate(给定文件的部分名称)
 ..代表上一层目录
 -代表前一个工作目录
 ~代表“目录用户身份”所在的主文件夹
+
+gzip test.py//将test.py压缩为test.py.gz
+gzip -d test.py.gz//将test.py.gz解压为test.py
+zcat test.py.gz//读取内容
+
+bzip2 test.py//将test.py压缩为test.py.bz2
+bzip2 -d test.py.bz2//将test.py.bz2解压为test.py
+tar -jcv -f leezi.tar.bz2 leezi//将leezi文件夹打包并压缩为leezi.tar.bz2
+tar -jtv -f leezi.tar.bz2//查询压缩包
+tar -jxv -f leezi.tar.bz2 -C xxx//解压到xxx文件下
+
+在bash的shell中，执行命令太长可以使用\来进行断行
+在bash中，单引号仅能是一般字符，而双引号仍然可以保有变量的内容
+在命令执行的过程中，反单引号内的命令将会被先执行，执行的结果将作为外部的输入信息。比如：file=test,rm `echo $file`
+env:environment，可以查看默认的环境变量
+可以使用set查看所有变量（环境变量和自定义变量）
+read命令可以读取来自键盘输入的变量
+declare可以声明变量的类型（a：array，i：integer，x：env_variable，r:readonly类型）
+alias listall='ls -al'
+unalias listall
+history 10//列出最近的10条历史告警
+
