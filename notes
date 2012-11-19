@@ -282,3 +282,7 @@ alias listall='ls -al'
 unalias listall
 history 10//列出最近的10条历史告警
 
+
+ubuntu上安装视频软件：apt-get install cheese(之后就可以启动cheese来打开usb接口的视频头，必须确保已经安装了linux上都视频驱动程序，比如gspcav等)
+
+
