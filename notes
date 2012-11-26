@@ -296,3 +296,23 @@ file_handler=RotatingFileHandler(path)
 logger.addHandler(file_hander)
 logger.warn("fuckyou")
 
+cup两大生产厂家：Intel(pentium系列)和AMD(authlon,duron)
+
+dmidecode is a tool for dumping a computer's DMI table contents in a human-readable format.this table contains a description of the system's hardware components,as well as other useful pieces of information such as serial numbers and BIOS revision.
+
+>>> import string
+>>> source='''
+... i love you
+... '''
+>>> table=string.maketrans('love','10ve')
+>>> source.translate(table)
+'\ni 10ve y0u\n'
+>>> 
+
+locals()->dictionary
+update and return a dictionary containing the current scope's local variable
+
+os.listdir('.')//列出当前目录中都所有文件，类型为list
+os.path.splitext("pic.jpeg")//根据文件名中的点号进行分割，返回tuple:("pic","jpeg")
+isinstance(object,class-or-type-or-tuple)->bool
+os.path.isfile(path)
